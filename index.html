@@ -1114,6 +1114,8 @@ document.getElementById("lightbox").addEventListener("click", e => {
       s += "<text class=tick x=" + (lx + 14) + " y=" + (bandY + bandH + 17) + ">" + k + "</text>";
       lx += 14 + k.length * 6 + 26;
     }
+    s += "<rect x=" + lx + " y=" + (bandY + bandH + 8) + " width=10 height=10 fill='#2F4F3A' opacity='0.55'/>";
+    s += "<text class=tick x=" + (lx + 14) + " y=" + (bandY + bandH + 17) + ">faded = watch was off (matches the dashed line)</text>";
   }
   for (let m = 0; m <= xmax; m += 4) {
     s += "<text class=tick x=" + X(m) + " y=" + (H - 4) + " text-anchor='middle'>" + m + " mi</text>";
